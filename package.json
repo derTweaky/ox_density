@@ -1,0 +1,41 @@
+{
+  "name": "ox_density",
+  "version": "1.0.0",
+  "private": true,
+  "description": "High-performance vehicle and pedestrian density controller for FiveM",
+  "keywords": [
+    "fivem",
+    "ox_lib",
+    "density"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Tweaky"
+  },
+  "type": "module",
+  "scripts": {
+    "lint": "oxlint",
+    "format": "oxfmt",
+    "tsd": "bun tsdown --",
+    "dev": "bun tsdown --watch",
+    "build": "bun tsdown"
+  },
+  "dependencies": {
+    "@overextended/core": "^0.3.1",
+    "@overextended/ox_lib": "^3.35.0"
+  },
+  "devDependencies": {
+    "@citizenfx/client": "latest",
+    "@citizenfx/server": "latest",
+    "@types/bun": "latest",
+    "@types/node": "latest",
+    "fast-glob": "^3.3.3",
+    "oxfmt": "^0.51.0",
+    "oxlint": "^1.66.0",
+    "tsdown": "^0.22.0",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=22.22.0"
+  }
+}

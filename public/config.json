@@ -1,0 +1,56 @@
+{
+  "globalDensity": {
+    "vehicles": 0.5,
+    "peds": 0.5,
+    "randomVehicles": 0.5,
+    "parkedVehicles": 0.5,
+    "scenarioPedsInternal": 0.5,
+    "scenarioPedsExternal": 0.5
+  },
+  "disableDispatch": true,
+  "disableCops": true,
+  "disableBoats": true,
+  "disableTrains": true,
+  "disableGarbageTrucks": true,
+  "budgets": {
+    "pedPopulation": 2,
+    "vehiclePopulation": 2
+  },
+  "enableZones": true,
+  "zones": [
+    {
+      "name": "legion_square_high_density",
+      "type": "box",
+      "coords": [150.0, -1000.0, 30.0],
+      "size": [150.0, 150.0, 50.0],
+      "rotation": 0.0,
+      "density": {
+        "vehicles": 0.8,
+        "peds": 0.9,
+        "randomVehicles": 0.8,
+        "parkedVehicles": 0.7,
+        "scenarioPedsInternal": 0.9,
+        "scenarioPedsExternal": 0.9
+      }
+    },
+    {
+      "name": "airport_low_density",
+      "type": "sphere",
+      "coords": [-1000.0, -3000.0, 13.0],
+      "radius": 400.0,
+      "density": {
+        "vehicles": 0.1,
+        "peds": 0.1,
+        "randomVehicles": 0.1,
+        "parkedVehicles": 0.1,
+        "scenarioPedsInternal": 0.1,
+        "scenarioPedsExternal": 0.1
+      }
+    }
+  ],
+  "adminCommand": {
+    "enabled": true,
+    "commandName": "density",
+    "restricted": "group.admin"
+  }
+}
